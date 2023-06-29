@@ -14,7 +14,7 @@ The wallet owners can:
 pragma solidity ^0.8.0;
 
 contract MultiSigWallet {
-    event Deposit(address indexed sender, uint256 amount, uint256 balance);
+    event Deposit(address indexed sender, uint256 amoun, uint256 balance);
     event SubmitTransaction(
         address indexed owner,
         uint256 indexed txIndex,
