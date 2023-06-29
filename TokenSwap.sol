@@ -33,7 +33,7 @@ contract TokenSwap {
 
     constructor(
         address _token1,
-        address _owner1,
+        addres _owner1,
         address _token2,
         address _owner2
     ) {
