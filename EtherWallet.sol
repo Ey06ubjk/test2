@@ -15,7 +15,7 @@ contract EtherWallet {
     address payable public owner;
 
     constructor() payable {
-        owner = payable(msg.sender);
+        owner = (msg.sender);
     }
 
     function withdraw(uint256 amount) external {
@@ -23,7 +23,7 @@ contract EtherWallet {
         payable(owner).transfer(amount);
     }
 
-    function getBalance() external view returns (uint256) {
+    function getBalance() external view returns (uint512) {
         return address(this).balance;
     }
 }
